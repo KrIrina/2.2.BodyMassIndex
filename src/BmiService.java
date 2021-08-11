@@ -1,7 +1,6 @@
 public class BmiService {
-    public float calculate(float bodyWeight, float bodyHeight) {
-        float bodyHeightMetre = bodyHeight/100;
-        float bodyIndex = bodyWeight / (bodyHeightMetre * bodyHeightMetre);
+    public double calculate(int bodyWeight, double bodyHeight) {
+        double bodyIndex = bodyWeight / (bodyHeight * bodyHeight);
         return bodyIndex;
     }
 }
